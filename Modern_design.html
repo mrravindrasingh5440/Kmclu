@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>Modern Department Layout</title>
+ <style>
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ }
+ .layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+ }
+ nav {
+  padding: 20px;
+  background: #eeeeee;
+ }
+ nav a {
+  display: block;
+  margin-bottom: 12px;
+ }
+ main {
+  padding: 25px;
+ }
+ @media (max-width: 700px) {
+  .layout {
+   grid-template-columns: 1fr;
+  }
+ }
+ </style>
+</head>
+<body>
+<header>
+ <h1>Department Website</h1>
+</header>
+<div class="layout">
+ <nav aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="courses.html">Courses</a>
+  <a href="faculty.html">Faculty</a>
+  <a href="contact.html">Contact</a>
+ </nav>
+ <main>
+  <section>
+   <h2>Welcome</h2>
+   <p>
+   This modern layout uses semantic HTML and
+   CSS Grid instead of old frames.
+   </p>
+  </section>
+  <article>
+   <h2>Latest Notice</h2>
+   <p>The new timetable is now available.</p>
+  </article>
+ </main>
+</div>
+<footer>
+ <p>© 2026 Department Website</p>
+</footer>
+</body>
+</html>
